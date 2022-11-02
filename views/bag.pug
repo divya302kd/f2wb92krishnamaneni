@@ -9,6 +9,12 @@ block content
                 div(class = "col-sm-2 bg-warning" onclick=`buy(${index})`) #{form.bag_brand}                
                 div(class = "col-sm-2 bg-warning" onclick=`buy(${index})`) #{form.bag_price}
                 hr
-                
+    script.
+
+        function buy(itemNo)
+        {
+            alert(`You purchased Item ${itemNo+1}`)
+        }
+
 
 
